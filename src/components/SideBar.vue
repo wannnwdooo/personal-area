@@ -85,6 +85,7 @@ export default {
     border-top: 1px solid var(--gray);
     cursor: pointer;
     color: var(--black);
+    font-weight: bold;
 
     &:hover {
       background: #eaeaea;

@@ -9,8 +9,16 @@
 @font-face {
   font-family: "Open Sans";
   src: local("OpenSans-Bold"), local("OpenSans-Regular"),
-    url("~@/assets/fonts/OpenSans-Bold.ttf"),
     url("~@/assets/fonts/OpenSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("OpenSans-Bold"), local("OpenSans-Regular"),
+    url("~@/assets/fonts/OpenSans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
 }
 * {
   padding: 0;
@@ -27,6 +35,7 @@
   display: grid;
   grid-template-columns: 300px 1fr;
   height: 100%;
+  width: 100%;
   min-height: 100vh;
 }
 :root {

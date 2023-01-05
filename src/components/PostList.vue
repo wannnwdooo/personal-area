@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import MyButton from "@/components/MyButton.vue";
+import MyButton from "@/components/baseUI/MyButton.vue";
 import ModalWindow from "@/components/ModalWindow.vue";
 
 export default {
@@ -95,7 +95,7 @@ export default {
     justify-content: center;
 
     .postTitle {
-      font-weight: normal;
+      font-weight: bold;
       font-size: 16px;
       margin-bottom: 5px;
       text-align: start;
@@ -114,7 +114,7 @@ export default {
 
     .openPostBody {
       text-align: start;
-      font-size: 13px;
+      font-size: 14px;
       margin-top: 20px;
     }
 

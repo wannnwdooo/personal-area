@@ -1,12 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
-import AllNews from "@/views/AllNews.vue";
 import MainLayout from "@/layouts/MainLayout.vue";
 
 const routes = [
   {
     path: "/",
     name: "home",
-    component: AllNews,
+    component: () => import("@/pages/NewsPage.vue"),
     meta: {
       layout: MainLayout,
     },
@@ -14,7 +13,7 @@ const routes = [
   {
     path: "/create",
     name: "create",
-    component: () => import("@/views/CreateView.vue"),
+    component: () => import("@/pages/CreatePage.vue"),
     meta: {
       layout: MainLayout,
     },

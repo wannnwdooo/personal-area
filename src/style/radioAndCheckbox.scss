@@ -1,0 +1,41 @@
+.customLabel {
+  display: flex;
+  align-items: center;
+
+  .customInput {
+    display: none;
+
+    &:checked + .customFakeInput {
+      border: 1px solid var(--blue);
+
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+
+  .customFakeInput {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid var(--gray);
+    position: relative;
+    margin-right: 5px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 1px;
+      background: var(--blue);
+      opacity: 0;
+      transition: 0.2s;
+    }
+  }
+}
